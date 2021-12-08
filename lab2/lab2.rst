@@ -1,4 +1,4 @@
-.. _l1:
+.. _l2:
 
 -----
 Zones
@@ -28,51 +28,79 @@ Systems used in this lab:
 - dc.greensafe.lab
 - apps-server.greensafe.lab
 
-#. Open Active Directory Users and Computers (ADUC).
+------
+
+#. Open Active Directory Users and Computers (ADUC)
 #. Navigate to Centrify Centrify Administration
-#. Open the AD group cfyA_Global_CentrifyAdmins.
-#. Click Members.
-#. Click Add.
-#. Add Team_Security and close the group properties.
-#. Close ADUC. Let’s now create the Parent Zone
-#. Open Centrify Access Manager.
-#. Expand Centrify Access Manager (dc-server.greensafe.lab).
-#. Right Click on Zones and select Create New Zone.
-#. Name the new zone Global Zone.
+#. Open the AD group cfyA_Global_CentrifyAdmins
+#. Click Members
+#. Click Add
+#. Add Team_Security and close the group properties
+#. Close ADUC
+#. Let’s now create the Parent Zone, open Centrify Access Manager
+#. Expand Centrify Access Manager (dc-server.greensafe.lab)
+#. Right Click on Zones and select Create New Zone
+#. Name the new zone Global Zone
 #. Click Next
 #. Click Finish Let’s now delegate zone controls to the appropriate administrators
-#. Right Click the new Global Zone and select Delegate Zone Control.
-#. Click Add.
-#. Search for and add the AD group cfyA_Global_CentrifyAdmins.
-#. Click Next.
-#. Under Tasks to Delegate, click All.
-#. Click Next.
-#. When prompted about the msDS-azScope objects, click Yes.
-#. Click Finish. Let’s now create the Child Zones.
-#. Right Click Global Zone and select Create Child Zone.
-#. Name the new child zone UNIX Zone.
-#. Click Next.
-#. Click Finish. We have to remember to delegate zone controls to each zone. In some cases, you may have different administrators responsible for each zone.
-#. Right Click the new UNIX Zone and select Delegate Zone Control.
-#. Click Add.
-#. Search for and add the AD group cfyA_Global_CentrifyAdmins.
-#. Click Next.
-#. Under Tasks to Delegate, click All.
-#. Click Next.
-#. When prompted about the msDS-azScope objects, click Yes.
-#. Click Finish. Let’s now create the Windows Child Zones.
-#. Right Click Global Zone and select Create Child Zone.
-#. Name the new child zone Windows Zone.
-#. Click Next.
-#. Click Finish. Don’t forget to delegate zone controls for this zone.
-#. Right Click the new Windows Zone and select Delegate Zone Control.
-#. Click Add.
-#. Search for and add the AD group cfyA_Global_CentrifyAdmins.
-#. Click Next.
-#. Under Tasks to Delegate, click All.
-#. Click Next.
-#. When prompted about the msDS-azScope objects, click Yes.
-#. Click Finish.
+#. Right Click the new Global Zone and select Delegate Zone Control
+#. Click Add
+#. Search for and add the AD group cfyA_Global_CentrifyAdmins
+#. Click Next
+#. Under Tasks to Delegate, click All
+#. Click Next
+#. When prompted about the msDS-azScope objects, click Yes
+#. Click Finish. Let’s now create the Child Zones
+#. Right Click Global Zone and select Create Child Zone
+#. Name the new child zone UNIX Zone
+#. Click Next
+#. Click Finish. We have to remember to delegate zone controls to each zone. In some cases, you may have different administrators responsible for each zone
+#. Right Click the new UNIX Zone and select Delegate Zone Control
+#. Click Add
+#. Search for and add the AD group cfyA_Global_CentrifyAdmins
+#. Click Next
+#. Under Tasks to Delegate, click All
+#. Click Next
+#. When prompted about the msDS-azScope objects, click Yes
+#. Click Finish. Let’s now create the Windows Child Zones
+#. Right Click Global Zone and select Create Child Zone
+#. Name the new child zone Windows Zone
+#. Click Next
+#. Click Finish. Don’t forget to delegate zone controls for this zone
+#. Right Click the new Windows Zone and select Delegate Zone Control
+#. Click Add
+#. Search for and add the AD group cfyA_Global_CentrifyAdmins
+#. Click Next
+#. Under Tasks to Delegate, click All
+#. Click Next
+#. When prompted about the msDS-azScope objects, click Yes
+#. Click Finish
+
+
+Prepare Zone Server objects
+***************************
+
+#. Using Centrify Access Manager, expand Child Zones
+#. Expand Unix Zone
+#. Right click Computers and select Prepare UNIX Computer
+#. Under Prepare Computer, maintain the default settings and click Next
+#. Under specify computer, click Next to add a new computer object
+#. Name the computer db-unix
+#. Click Change to change the computer container
+#. Navigate to greensafe.lab Centrify Computers and Click OK
+#. Click Next
+#. Under Read Only Domain Controller settings, maintain the default settings and license selection and click Next
+#. Under SPN Configuration, maintain the default settings and click Next
+#. Under Delegate Join Permissions, maintain the default setting to allow the computer to join itself to the zone and click Next
+#. Under Delegate Machine Overrides, click Browse to change the AD group
+#. Search for and select cfyA_Global_CentrifyAdmins
+#. Click Next
+#. Click Next to confirm the configuration
+#. Click Finish. Let’s now add a domain joined system to a Centrify Zone
+#. Expand Windows Zone
+#. Right click Computers and select Prepare Windows Computer
+#. Search for and Add db-server.greensafe.lab
+#. Click OK
 
 .. raw:: html
 
