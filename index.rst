@@ -21,7 +21,7 @@ This hands-on exercise guide will walk you through the fundamental features and 
 | During this training, you will be working with Greensafe Payroll Services. Alex Foster is the primary administrator of the Infrastructure. Greensafe’s network includes a Windows Active Directory domain controller, one (A) Windows Application Server, one (1) Microsoft SQL Server, and two (2) UNIX servers. A “cloud” environment is also used for DevOps and includes two independent non-AD joined servers. As part of the purchase of Centrify Server Suite, a SaaS based Centrify Identity Platform (tenant) has been provided to facilitate the management of the environment.
 
 
-.. figure:: images/infra.png
+.. figure:: images/infra-diagram.png
 
 ------
 
