@@ -1,150 +1,28 @@
-.. title:: ThycoticCentrify - Secure Server Handson Training
+.. title:: ThycoticCentrify - Server Suite Handson Training
 
 .. toctree::
    :maxdepth: 2
-   :caption: Module 1
-   :name: _m1
+   :caption: Lab 1
+   :name: _l1
    :hidden:
 
-   module1/module1
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Module 2 - Basic Configuration
-  :name: _m2
-  :hidden:
-
-  module2/module2
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Module 3 - Users, Groups and Roles
-  :name: _m3
-  :hidden:
-
-  module3/module3
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Module 4 - Folder and Policies
-  :name: _m4
-  :hidden:
-
-  module4/module4
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Module 5 - Secret Templates
-  :name: _m5
-  :hidden:
-
-  module5/module5
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Module 6 - Launchers
-  :name: _m6
-  :hidden:
-
-  module6/module6
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Module 7 - Remote Password Changers
-  :name: _m7
-  :hidden:
-
-  module7/module7
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Module 8 - Secret Workflows
-  :name: _m8
-  :hidden:
-
-  module8/module8
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Module 9 - Discovery
-  :name: _m9
-  :hidden:
-
-  module9/module9
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Module 10 - Auditing and Security
-  :name: _m10
-  :hidden:
-
-  module10/module10
+   lab1/lab1
   
 .. _getting_started:
 
 ----------------
-Before You Begin
+About this guide
 ----------------
 
-Purpose
--------
+This hands-on exercise guide will walk you through the fundamental features and functionality of Centrify Server Suite. You will be working with several computer systems as you complete each exercise, however not all systems will need to be powered during each lab exercise. Before each lab begins you will be provided initial instructions related to required systems. This is done to conserve resources in the virtual environment.
 
-This training and lab guide is designed to accompany a Thycotic trainer lead course. During your training course the trainer will regularly reference this guide as well as demonstrating lab exercises within a shared desktop environment and discussing common use cases and real-world scenarios.
+| If you plan to use the training materials for in-house training, you can configure a training environment in your network, but it is recommended to consider your network configurations and security practices. This environment is for training purposes and will not match your network environment. Use the **Appendix** in the **Student Guide** to read more about the training environment and how it is configured.
 
-Your training pack
-------------------
-
-Before you start this training course, ensure you have received lab details from your Thycotic trainer.
-The Secret Server lab consists of the following machines:
-
-.. list-table::
-   :widths: 15 15 15 55
-   :header-rows: 1
-
-   * - Machine Name
-     - Internal Lab Name
-     - Internal IP
-     - Description
-   * - DC1
-     - DC1
-     - 172.31.32.10
-     - Domain Controller - contains all AD configuration used within the lab
-   * - SSPM
-     - SSPM
-     - 172.31.32.114
-     - This machine will be used to install and host Secret Server
-   * - Client
-     - Client01
-     - 172.31.32.118
-     - Windows server, used to test a range of Secret Server functionalities during the training course
-   * - CENTOS
-     - 
-     - 172.31.32.121
-     - CentOS machine, used to test a range fo Secret Server functionalities during the training course
+| During this training, you will be working with Greensafe Payroll Services. Alex Foster is the primary administrator of the Infrastructure. Greensafe’s network includes a Windows Active Directory domain controller, one (A) Windows Application Server, one (1) Microsoft SQL Server, and two (2) UNIX servers. A “cloud” environment is also used for DevOps and includes two independent non-AD joined servers. As part of the purchase of Centrify Server Suite, a SaaS based Centrify Identity Platform (tenant) has been provided to facilitate the management of the environment.
 
 
-You will need to initiate a remote desktop connection to the **PUBLIC IP** address of the Win machine. This IP address is dynamic and will change whenever the lab environment is restarted. The Win server machine serves as a jump box from which you can then RDP to the other windows machines by hostname. Lab Exercise 1 explains the process of identifying the IP address of your lab jump box and connecting to it.
+.. figure:: images/infra.png
 
-To log into the Virtual Machines with administrative rights, the below information is providing you the credentials for Windows and Linux.
+------
 
-**Windows Domain Admin Account**
-
-| Username: **thylab\\adm-training**
-| Password: **Provided by trainer**
-
-**Centos SSH Account**
-
-| Username: **thycotic**
-| Password: **Provided by trainer**
-
-
-Introduction
-------------
-
-Your trainer will provide a slide-based introduction to Secret Server, the slide deck used will be shared. 
-
-.. raw:: html
-
-    <hr><CENTER>
-    <H2 style="color:#80BB01">This concludes this module</font>
-    </CENTER>
+Start the lab :ref:`l1`
