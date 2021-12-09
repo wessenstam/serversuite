@@ -15,6 +15,14 @@
    :hidden:
 
    lab2/lab2
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Lab 3
+   :name: _l3
+   :hidden:
+
+   lab3/lab3
 
 .. _getting_started:
 

@@ -24,7 +24,7 @@ Installation and Configuration
 
 Systems used in this lab:
 
-- dc.greensafe.lab
+- dc-server.greensafe.lab
 - apps-server.greensafe.lab
 
 Installation
@@ -35,53 +35,78 @@ Installation
    - **Username:** afoster
    - **Password:** *Provided by Trainer*
 
-#. Open Windows Explorer and navigate to C:\\Share\\CSS2021.1
+#. Open Windows Explorer and navigate to C:\\Share\\CSS2021
 #. Launch the **Autorun** application and click **Authentication and Privilege**
-#. When prompted to install Microsoft SQL Compact 4.0 for support of the Sudoers Import process, click **NO**
+
+   .. figure:: images/lab-001.png
+
+#. When prompted to install *Microsoft SQL Compact 4.0* for support of the Sudoers Import process, click **No**
 #. At the Welcome Message, click **Next**
 #. Accept the EULA and click **Next**
-#. Enter the Company Name **Greensafe Payroll Services**
-#. Under *Property Components*, expand *Centrify Utilities* and click the **checkbox** next to *Zone Provisioning Agent*
+#. Leave the **User Name** as *administrator* and enter the Company Name **Greensafe Payroll Services**, click **Next**
+#. Under *Select Product Components*, expand *Centrify Utilities* and click the **checkbox** next to *Zone Provisioning Agent*
 #. Click **Next**
 #. Under the *Destination* folder, click **Next**
-#. Under *Confirm Settings*, click **Next**
+#. Under *Confirm Installation Settings*, click **Next** to start the installation
+
+   .. figure:: images/lab-002.png
+
 #. Once completed, **UNCHECK** the options to configure the following products:
 
    - Centrify Reporting Services
    - Centrify Zone Provisioning Agent
 
+   .. figure:: images/lab-003.png
+
 #. Click **Finish**
 #. Click **Yes** when prompted about using a Local system account to manage the Zone Provisioning Agent (ZPA)
-#. **Close** the Centrify Server Suite Installation Package
+
+   .. figure:: images/lab-004.png
+
+#. Close the Centrify Server Suite Installation Package by clicking **Exit**
 
 Configuration
 ^^^^^^^^^^^^^
 
 In this exercise, Alex (you) will complete the initial configuration of the solution using the management console, Centrify Access Manager. This configuration will include the creation of an active directory deployment structure and licensing.
 
-#. While still being on the *apps-server.greensfae.lab* Open Windows Explorer and navigate to **C:\\Share**
+#. While still being on the *apps-server.greensafe.lab* Open Windows Explorer and navigate to **C:\\Share**
 #. Open **Training License Keys** and copy the **DirectControl License Key** to the clipboard
 #. **Close** the file
-#. Launch C**entrify Access Manager** from the Desktop shortcut
+#. Launch **Centrify Access Manager** from the Desktop shortcut
+
+   .. figure:: images/lab-005.png
+
 #. Click **OK** to connect to **dc-server.greensafe.lab**
 #. At the *Welcome Message*, click **Next**
 #. Under *User Credentials*, maintain the default setting and click **Next**
-#. Under *Generate Centrify Recommended Deployment Structure*, Click the **checkbox** to generate the structure and click Next
+#. Under *Generate Centrify Recommended Deployment Structure*, Click the **checkbox** to generate the structure and click **Next**
+
+   .. figure:: images/lab-006.png
+
 #. Under *Choose Container*, click **Browse**
-#. Select **greensafe.lab**
-#. Click **Next**
+#. Select **greensafe.lab** and click **Ok**
 #. Click **Next** once the deployment structure container has been populated
-#. When the deployment structure has been created successfully, click **Next**
+
+   .. figure:: images/lab-007.png
+
 #. Under *Install License*, maintain the default container and click **Next**
-#. When prompted, click **yes** to grant all users read permissions to the license container
+#. When prompted, click **Yes** to grant all users read permissions to the license container
 #. Paste the License key (copied earlier) in the space provided and click **Add**
+
+   .. figure:: images/lab-008.png
+
 #. Click **Next**
 #. Under the *Default Container for Zones*, maintain the default settings and click **Next**
 #. Under *Delegate Permission*, maintain the default settings and click **Next**
-#. Under *AD Admin Notification Handler*, maintain the default settings and click **Next**
+#. Under *Register the AD Administrative Notification Handler*, maintain the default settings and click **Next**
 #. Under *Setup Properties Pages*, maintain the default settings and click **Next**
 #. Under *Summary*, Click **Next**
 #. Click **Finish** to complete the initial configuration wizard
+#. The UI of Centrify Access Manager will open
+
+   .. figure:: images/lab-009.png
+
 
 
 .. raw:: html
