@@ -499,6 +499,8 @@ Check Effective Rights and Test Roles
 
    .. figure:: images/lab-028.png
 
+#. Close *Effective Unix User Rights**
+
 Test the configured roles
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 

@@ -48,6 +48,14 @@
 
    lab6/lab6
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Lab 7
+   :name: _l7
+   :hidden:
+
+   lab7/lab7
+
 .. _getting_started:
 
 ----------------
