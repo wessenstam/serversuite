@@ -9,8 +9,12 @@ Introduction
 
 This fourth lab will cover:
 
-1.
-2.
+1. Create AD account for the ZPA
+2. Configure the ZPA Service
+3. Configure the ZPA
+4. Configure ZPA for automatic provisioning
+5. Assign the automatic provisioning to the zone
+6. Test automatic provisioning
 
 .. note::
     Estimated time to complete this lab: **20 minutes**
