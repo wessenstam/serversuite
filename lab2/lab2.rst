@@ -20,8 +20,7 @@ In this exercise, Alex (you) will continue the initial configuration of the Cent
 .. note::
     Estimated time to complete this lab: **25 minutes**
 
-Creation of Zones
-*****************
+------
 
 Systems used in this lab:
 
@@ -29,6 +28,9 @@ Systems used in this lab:
 - apps-server.greensafe.lab
 
 ------
+
+Creation of Zones
+*****************
 
 #. While stilling being logged in in the apps-server.greensfae.lab, open Active Directory Users and Computers (ADUC) 
 

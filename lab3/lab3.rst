@@ -15,13 +15,17 @@ This third lab will cover:
 .. note::
     Estimated time to complete this lab: **15 minutes**
 
-Add domain users
-****************
+------
 
 Systems used in this lab:
 
 - dc-server.greensafe.lab
 - apps-server.greensafe.lab
+
+------
+
+Add domain users
+****************
 
 #. Using *Centrify Access Manager*, expand *Child Zones*
 #. Expand **UNIX Zone**

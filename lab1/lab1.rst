@@ -18,14 +18,17 @@ Greensafe Payroll Services has recently purchased Centrify Server Suite. Alex Fo
 .. note::
     Estimated time to complete this lab: **20 minutes**
 
-
-Installation and Configuration
-******************************
+------
 
 Systems used in this lab:
 
 - dc-server.greensafe.lab
 - apps-server.greensafe.lab
+
+------
+
+Installation and Configuration
+******************************
 
 Installation
 ^^^^^^^^^^^^
