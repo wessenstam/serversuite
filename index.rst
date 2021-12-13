@@ -56,6 +56,22 @@
 
    lab7/lab7
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Lab 8
+   :name: _l8
+   :hidden:
+
+   lab8/lab8
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Lab 9
+   :name: _l9
+   :hidden:
+
+   lab9/lab9
+
 .. _getting_started:
 
 ----------------

@@ -118,6 +118,9 @@ Creation of Zones
 Prepare Zone Server objects
 ***************************
 
+Unix Servers
+^^^^^^^^^^^^
+
 #. Using Centrify Access Manager, expand **UNIX Zone**
 #. Right-click *Computers* and select **Prepare UNIX Computer**
 #. Under *Prepare Computer*, maintain the default settings and click **Next**
@@ -141,7 +144,12 @@ Prepare Zone Server objects
 
    .. figure:: images/lab-010.png
 
-#. Let’s now add a domain joined system to a Centrify Zone. Expand **Windows Zone**
+#. **Repeat the above steps** *(Prepare Zone Server Objects)* **for the apps-unix server**
+
+Windows Servers
+^^^^^^^^^^^^^^^
+
+#. Expand **Windows Zone**
 #. Right-click Computers and select **Prepare Windows Computer**
 #. Search for and Add db-server.greensafe.lab
 #. Click **OK**

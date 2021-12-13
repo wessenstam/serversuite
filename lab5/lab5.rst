@@ -25,6 +25,7 @@ Systems used in this lab:
 - dc-server.greensafe.lab
 - apps-server.greensafe.lab
 - apps-unix.greensafe.lab
+- db-unix.greensafe.lab
 
 ------
 
@@ -76,6 +77,7 @@ Join the Unix machine to the AD and Unix Zone
 
        reboot
 
+#. **Repeat the steps taken in** *Installing the Centrify Agent on Unix* **and** *Join the Unix machine to the AD and Unix Zone* **for the apps-unix server**
 
 Join a Windows machine to the correct Zone
 ******************************************

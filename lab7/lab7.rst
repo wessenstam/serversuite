@@ -77,10 +77,18 @@ Test the set GPO on Unix
 
 #. Logout of the session
 
-.. TODO: In module 2 and 5 we also need to inject Object and Agent on apps-unix. Has not been added in the LAB, but bites us now and later in the ass!!
-  #. Open the UI of the *apps-unix* server
-  #. From the GUI Login interface, click *Not Listed?*
+
+#. Open the UI of the *apps-unix* server
+#. From the GUI Login interface, click *Not Listed?*
   
-     .. figure:: images/lab-005.png
+   .. figure:: images/lab-005.png
   
-  #. Enter the username **badams** and you will notice the password prompt is the same as the terminal window login
+#. Enter the username **badams** and you will notice the password prompt is the same as the terminal window login
+
+   .. figure:: images/lab-006.png
+
+.. raw:: html
+
+    <hr><CENTER>
+    <H2 style="color:#80BB01">This concludes this lab</font>
+    </CENTER>
