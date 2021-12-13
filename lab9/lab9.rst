@@ -548,13 +548,9 @@ In this exercise, Alex (you) will configure systems to validate users with multi
    - **Username:** lbennett@greensafe.lab
    - **Password:** *Provided by Trainer*
 
-Was Laura Bennett permitted to login?
-YES, Without MFA. YES, With MFA. NO.
+#. Was Laura Bennett permitted to login?
 #. Run dzdo systemctl restart firewalld
-Was Laura Bennett permitted to run this command?
-YES, Without MFA. YES, With MFA. NO.
-
-
+#. Was Laura Bennett permitted to run this command?
 
 .. raw:: html
 
