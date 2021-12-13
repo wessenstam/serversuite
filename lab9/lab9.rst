@@ -7,7 +7,7 @@ Configuration of the CIP
 Introduction
 ------------
 
-This eighth lab will cover:
+This ninth lab will cover:
 
 1. Configure Role-Based Permissions
 2. Configure a Domain Administrative Account
@@ -558,3 +558,5 @@ In this exercise, Alex (you) will configure systems to validate users with multi
     <H2 style="color:#80BB01">This concludes this lab</font>
     </CENTER>
 
+.. TODO:
+    Need to figure out why the MFA is not working for jbennett... Also no Secret Questions has been defined!!!
