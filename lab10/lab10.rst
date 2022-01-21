@@ -28,8 +28,7 @@ Systems used in this lab:
 - apps-unix.greensafe.lab
 - db-server.greensafe.lab
 - db-unix.greensafe.lab
-- lnx-platform-backend.greensafe.lab
-- win-id-platform.greensafe.lab
+- \https://<tenant>.my.centrify.net
 
 ------
 

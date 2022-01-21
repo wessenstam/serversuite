@@ -25,8 +25,7 @@ Systems used in this lab:
 
 - dc-server.greensafe.lab
 - apps-server.greensafe.lab
-- win-id-platform.greensafe.com
-- lnx-backend-platform.greensafe.lab
+- \https://<tenant>.my.centrify.net
 
 ------
 

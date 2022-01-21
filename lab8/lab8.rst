@@ -24,8 +24,7 @@ Systems used in this lab:
 
 - dc-server.greensafe.lab
 - apps-server.greensafe.lab
-- win-id-platform.greensafe.com
-- lnx-backend-platform.greensafe.lab
+- \https://<tenant>.my.centrify.net
 
 ------
 
@@ -39,7 +38,7 @@ In this exercise, Alex (you) will login to the Centrify Identity Platform and pe
    - **Username:** afoster
    - **Password:** *Provided by Trainer*
 
-#. Launch Google Chrome and browse to your unique Identity Platform URL https://win-id-platform.greensafe.lab
+#. Launch Google Chrome and browse to your unique Identity Platform URL https://<tenant>.my.centrify.net
 #. Login to your unique Identity Platform with the following credentials:
 
    - **Username:** admin
@@ -176,7 +175,7 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
 #. At the Welcome Message, click **Next**
 #. Maintain strong encryption options and click **Next**
 #. Greensafe is not using a proxy server and no changes are needed. Click **Next**
-#. Change the Tenant URL with your unique platform URL. https://win-id-platform.greensafe.lab (You can copy and paste the URL directly from the address bar of the browser.) Leave all other options *default*!!!
+#. Change the Tenant URL with your unique platform URL. \https://<tenant>.my.centrify.net (You can copy and paste the URL directly from the address bar of the browser.) Leave all other options *default*!!!
 
    .. figure:: images/lab-011.png
 
