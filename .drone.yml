@@ -8,17 +8,19 @@ platform:
 steps:
 - name: Sync Files (Main)
   commands:
+  - export product="serversuite"
   - cd /home/t320569/github
-  - if [ -d "serversuite" ]; then git --git-dir=/home/t320569/github/serversuite/.git pull; else git clone https://github.com/wessenstam/serversuite/; fi
-  - chown -R t320569:t320569 /home/t320569/github/serversuite  
+  - if [ -d "$product" ]; then git --git-dir=/home/t320569/github/$product/.git pull; else git clone https://github.com/wessenstam/$product/; fi
+  - chown -R t320569:t320569 /home/t320569/github/$product  
   when:
     branch:
     - main
   
 - name: Build Dev HTML(dev)
   commands:
-  - docker run --rm --name build_dev_html -v /home/t320569/github/serversuite:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . dev
-  - chown -R t320569:t320569 /home/t320569/github/serversuite/dev  
+  - export product="serversuite"
+  - docker run --rm --name build_dev_html -v /home/t320569/github/$product:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . dev
+  - chown -R t320569:t320569 /home/t320569/github/$product/dev  
   when:
     branch:
     - dev
