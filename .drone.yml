@@ -10,7 +10,7 @@ steps:
   commands:
   - cd /home/t320569/github
   - if [ -d "serversuite" ]; then git --git-dir=/home/t320569/github/serversuite/.git pull; else git clone https://github.com/wessenstam/serversuite/; fi
-  - chown -R t320569:admin /home/t320569/github/serversuite  
+  - chown -R t320569:t320569 /home/t320569/github/serversuite  
   when:
     branch:
     - main
