@@ -16,7 +16,7 @@ steps:
   
 - name: Build Dev HTML(dev)
   commands:
-  - git clone "https://github.com/wessenstam/$PRODUCT_NAME/" /tmp/$PRODUCT_NAME
+  - git clone --branch dev "https://github.com/wessenstam/$PRODUCT_NAME/" /tmp/$PRODUCT_NAME
   - docker run --rm --name build_dev_html -v /var/www/html:/develop -v /tmp/$PRODUCT_NAME:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . /develop/$PRODUCT_NAME/dev
   environment:
     PRODUCT_NAME: serversuite
