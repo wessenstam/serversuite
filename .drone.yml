@@ -21,7 +21,7 @@ steps:
   
 - name: Build Dev HTML(dev)
   commands:
-  - echo ${PRODUCT_NAME}
+  - echo "${PRODUCT_NAME} as the variable"
   # - docker run --rm --name build_dev_html -v "/home/t320569/github/${PRODUCT_NAME}":/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . dev
   # - chown -R t320569:t320569 "/home/t320569/github/${product}/dev"  
   when:
