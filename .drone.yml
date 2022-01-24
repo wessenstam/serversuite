@@ -14,3 +14,7 @@ steps:
   when:
     branch:
     - main
+  
+- name: Build Dev HTML(dev)
+  commands:
+  - docker run --rm --name build_dev_html -v /home/t320569/github/serversuite:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . dev
