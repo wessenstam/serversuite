@@ -24,4 +24,4 @@ steps:
     PRODUCT_NAME: serversuite
   when:
     branch:
-    - dev
+    - dev 
