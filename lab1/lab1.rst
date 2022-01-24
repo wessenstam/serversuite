@@ -106,7 +106,7 @@ In this exercise, Alex (you) will complete the initial configuration of the solu
 #. Under *Setup Properties Pages*, maintain the default settings and click **Next**
 #. Under *Summary*, Click **Next**
 #. Click **Finish** to complete the initial configuration wizard
-#. The UI of Centrify Access Manager will open a screen 
+#. The UI of Centrify Access Manager will open a screen
 
    .. figure:: images/lab-009.png
 
