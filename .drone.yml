@@ -2,16 +2,13 @@ kind: pipeline
 type: exec
 name: default
 
-platform:
-  os: linux
-
-
+environment:
+  PRODUCT_NAME: serversuite
 
 steps:
 - name: Sync Files (Main)
   commands:
   - cd /home/t320569/github
-  - echo $PRODUCT_NAME
   - if [ -d "${PRODUCT_NAME}" ]; then git --git-dir="/home/t320569/github/${product}/.git" pull; else git clone "https://github.com/wessenstam/${product}/"; fi
   - chown -R t320569:t320569 "/home/t320569/github/$product"  
   when:
@@ -23,8 +20,6 @@ steps:
   - echo "$PRODUCT_NAME as the variable"
   # - docker run --rm --name build_dev_html -v "/home/t320569/github/${PRODUCT_NAME}":/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . dev
   # - chown -R t320569:t320569 "/home/t320569/github/${product}/dev"  
-  environment:
-    PRODUCT_NAME: serversuite
   when:
     branch:
     - dev
