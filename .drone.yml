@@ -5,8 +5,7 @@ name: default
 platform:
   os: linux
 
-environment:
-  PRODUCT_NAME: serversuite
+
 
 steps:
 - name: Sync Files (Main)
@@ -20,6 +19,8 @@ steps:
     - main
   
 - name: Build Dev HTML(dev)
+  environment:
+    PRODUCT_NAME: serversuite
   commands:
   - echo "${PRODUCT_NAME} as the variable"
   # - docker run --rm --name build_dev_html -v "/home/t320569/github/${PRODUCT_NAME}":/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . dev
