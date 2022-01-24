@@ -18,7 +18,7 @@ steps:
   commands:
   - cd /home/ubuntu/github
   - if [ -d "$PRODUCT_NAME" ]; then git --git-dir=/home/ubuntu/github/$PRODUCT_NAME/.git pull; else git clone "https://github.com/wessenstam/$PRODUCT_NAME/"; fi
-  - docker run --rm --name build_dev_html -v /home/ubuntu/github/$PRODUCT_NAME:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . /var/www/html/$PRODUCT_NAME/dev
+  - docker run --rm --name build_dev_html -v /var/www/html:/dev -v /home/ubuntu/github/$PRODUCT_NAME:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . /dev/$PRODUCT_NAME/dev
   - chown -R ubuntu:ubuntu "/home/ubuntu/github/$PRODUCT_NAME"  
   environment:
     PRODUCT_NAME: serversuite
