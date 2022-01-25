@@ -61,7 +61,7 @@ author = u'ThycoticCentrify Technical Enablement'
 # built documents.
 #
 # The short X.Y version.
-version = u''
+version = u'3.1'
 # The full version, including alpha/beta/rc tags.
 release = u''
 
