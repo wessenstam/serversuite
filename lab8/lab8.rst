@@ -104,7 +104,7 @@ Privileged roles are created to group privilege to the infrastructure. Roles can
 #. Click **Add**
 #. This role requires the privilege to Register and Manage Centrify Connectors, select **Register and Administer Connectors**
 
-   .. figure:: images/lab-008.png
+   .. figure:: images/lab-009.png
 
 #. Click **Add**
 #. Click **Members** left to the *Administrative Rights*
@@ -123,7 +123,7 @@ Privileged roles are created to group privilege to the infrastructure. Roles can
 #. Click **Add**
 #. This role requires privilege assigned by an administrator and should be limited to servers that are specifically assigned to the role. Greensafe  has contractors that manage Greensafe database servers. Select **Privilege Access Service Users**
 
-   .. figure:: images/lab-009.png
+   .. figure:: images/lab-008.png
 
 #. Click **Add**
 #. Click **Members** left to the *Administrative Rights*
