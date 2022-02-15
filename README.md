@@ -1,4 +1,4 @@
-# Labguide for ThycoticCentrify ServerSuite
+# Labguide for Delinea ServerSuite
 
 ## Version control
 Initial version:0.1
