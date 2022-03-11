@@ -1,4 +1,4 @@
-.. title:: ThycoticCentrify - Server Suite Handson Training
+.. title:: Delinea - Server Suite Handson Training
 
 .. toctree::
    :maxdepth: 2
